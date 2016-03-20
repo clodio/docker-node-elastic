@@ -1,0 +1,24 @@
+{
+  "name": "bookdb",
+  "version": "1.0.0",
+  "description": "A simple book database",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "async": "^0.9.0",
+    "body-parser": "^1.12.0",
+    "country-data": "0.0.18",
+    "express": "^4.12.2",
+    "express-handlebars": "^1.2.0",
+    "faker": "^2.1.2",
+    "handlebars": "^3.0.0",
+    "lodash": "^3.5.0",
+    "mongoosastic": "^2.0.6",
+    "mongoose": "^3.8.25",
+    "yargs": "^3.5.4"
+  }
+}
