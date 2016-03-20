@@ -1,5 +1,5 @@
 app:
-  image: nodesource/trusty:5.1
+  image: node:4.4-wheezy
   links:
     - elasticsearch
   volumes:
@@ -24,6 +24,7 @@ elasticsearch:
 
 kibana4:
   image: kibana:4.4
+  build: kibana/
   volumes:
     - ./kibana/config/:/opt/kibana/config/
   ports:
