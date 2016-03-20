@@ -1,7 +1,6 @@
 app:
   image: nodesource/node:trusty
   links:
-    - mongodb
     - elasticsearch
   volumes:
     - .:/app
@@ -10,23 +9,16 @@ app:
   ports:
     - "3000:3000"
   environment:
-    - MONGODB_URI=mongodb://mongodb:27017/books
     - ELASTICSEARCH_HOST=elasticsearch
   command: node server.js
- 
-
-mongodb:
-  image: dockerfile/mongodb
-  volumes:
-    - environment/data/mongodb:/data/db
-  ports:
-    - "27017:27017"
-  command: mongod --smallfiles
 
 elasticsearch:
   image: deviantony/elk-elasticsearch
   ports:
     - "9200:9200"
+  volumes:
+    - /usr/share/elasticsearch/data:/usr/share/elasticsearch/data
+    - ./elasticsearch/config/elasticsearch.yml:/usr/share/elasticsearch/config/elasticsearch.yml
 
 kibana4:
   image: deviantony/elk-kibana
