@@ -4,7 +4,7 @@ app:
     - elasticsearch
   volumes:
     - .:/app
-    - environment/logs:/var/log
+    - ./environment/logs:/var/log
   working_dir: /app
   ports:
     - "3000:3000"
