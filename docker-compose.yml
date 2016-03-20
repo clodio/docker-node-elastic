@@ -21,7 +21,7 @@ elasticsearch:
     - /usr/share/elasticsearch/config:/usr/share/elasticsearch/config
 
 kibana4:
-  image: deviantony/elk-kibana:latest
+  image: kibana:4.4
   ports:
     - "8080:80"
   links:
