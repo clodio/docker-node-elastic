@@ -13,11 +13,12 @@ app:
   command: node server.js
 
 elasticsearch:
-  image: deviantony/elk-elasticsearch:latest
+  image: elasticsearch:latest
   ports:
     - "9200:9200"
   volumes:
     - /usr/share/elasticsearch/data:/usr/share/elasticsearch/data
+    - /usr/share/elasticsearch/config:/usr/share/elasticsearch/config
 
 kibana4:
   image: deviantony/elk-kibana:latest
