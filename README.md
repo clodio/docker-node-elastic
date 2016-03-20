@@ -1,5 +1,5 @@
 # Bookdbtastic
- 
+
 This repo is a fork of [bookdbtastic](https://github.com/compose-ex/bookdbtastic/) with lots of changes. What I've done is:
 
 * added docker-compose for all components (book app, mongo, elk stack)
@@ -15,8 +15,8 @@ This repo is a fork of [bookdbtastic](https://github.com/compose-ex/bookdbtastic
 
 ## usage
 
-    git clone https://github.com/guumaster/bookdbtastic.git
-    cd bookdbtastic
+    git clone https://github.com/clodio/docker-node-elastic.git
+    cd docker-node-elastic
     docker-compose up -d
 
 Then open `http://localhost:3000/` to see the app, or `http://localhost:8080/` to interact with Kibana.
