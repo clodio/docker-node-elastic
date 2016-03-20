@@ -18,7 +18,6 @@ elasticsearch:
     - "9200:9200"
   volumes:
     - /usr/share/elasticsearch/data:/usr/share/elasticsearch/data
-    - ./elasticsearch/config/elasticsearch.yml:/usr/share/elasticsearch/config/elasticsearch.yml
 
 kibana4:
   image: deviantony/elk-kibana:latest
