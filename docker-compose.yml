@@ -13,7 +13,7 @@ app:
   command: node server.js
 
 elasticsearch:
-  image: deviantony/elk-elasticsearch
+  image: deviantony/elk-elasticsearch:latest
   ports:
     - "9200:9200"
   volumes:
@@ -21,7 +21,7 @@ elasticsearch:
     - ./elasticsearch/config/elasticsearch.yml:/usr/share/elasticsearch/config/elasticsearch.yml
 
 kibana4:
-  image: deviantony/elk-kibana
+  image: deviantony/elk-kibana:latest
   ports:
     - "8080:80"
   links:
