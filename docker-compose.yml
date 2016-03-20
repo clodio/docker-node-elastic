@@ -1,5 +1,5 @@
 app:
-  image: nodesource/node:trusty
+  image: nodesource/trusty:5.1
   links:
     - elasticsearch
   volumes:
